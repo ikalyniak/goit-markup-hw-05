@@ -108,6 +108,8 @@ body {
 .social-icon {
   width: 20px;
   height: 20px;
+
+  transition: fill 25000ms var(--timing-function);
 }
 /* ========== END COMPONENTS ========== */
 
@@ -156,6 +158,8 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--color-main);
+
+  transition: color 250ms var(--timing-function);
 }
 
 .nav-link:hover,
@@ -220,6 +224,8 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--color-second);
+
+  transition: color 250ms var(--timing-function);
 }
 
 .contacts-link:hover .contacts-icon,
@@ -230,6 +236,8 @@ body {
 .contacts-icon {
   margin-right: 10px;
   fill: var(--color-second);
+
+  transition: fill 250ms var(--timing-function);
 }
 /* ========== END HEADER ========== */
 
@@ -284,6 +292,8 @@ body {
   border-radius: 4px;
   border: 0px;
   cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .hero-btn:hover,
@@ -442,18 +452,22 @@ body {
   height: 44px;
 }
 
+.team-link {
+  color: var(--color-icon);
+  background-color: var(--color-logo-footer);
+
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
+
 .team-link:hover,
 .team-link:focus {
   background-color: var(--color-accent);
+  color: var(--color-logo-footer);
 }
 
-.team-link.social-link {
-  fill: var(--color-icon);
-}
-
-.team-link:hover .social-icon,
-.team-link:focus .social-icon {
-  fill: var(--color-logo-footer);
+.team-link .social-icon {
+  fill: currentColor;
 }
 /* ========== END OUR TEAM ========== */
 
@@ -487,6 +501,9 @@ body {
   color: var(--color-icon);
   border: 1px solid var(--color-icon);
   border-radius: 4px;
+
+  transition: color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
 }
 
 .clients-icon {
@@ -542,6 +559,8 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--color-footer-link);
+
+  transition: color 250ms var(--timing-function);
 }
 
 .contacts-link-footer:hover,
@@ -576,6 +595,8 @@ body {
 
 .footer-link {
   background-color: var(--color-footer-social-link);
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-link:hover,
@@ -618,6 +639,9 @@ body {
   border-radius: 4px;
   border: 0px;
   cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
 .filter-btn:hover,
@@ -642,6 +666,8 @@ body {
 .projects-link {
   display: block;
   outline: 1px solid #eeeeee;
+
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .projects-link:hover,
