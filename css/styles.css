@@ -542,6 +542,7 @@ body {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .contacts-container {
@@ -588,7 +589,7 @@ body {
 
 .footer-social-title {
   margin-bottom: 20px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 
   font-size: inherit;
   font-weight: 700;
